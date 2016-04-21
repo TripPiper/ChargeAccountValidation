@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author gwendolynsandy
+ */
+public class ChargeAccountValidation1 {
+
+    public static void main(String[] args) {
+
+        // Create new ArrayList.
+        ArrayList<Integer> elements = new ArrayList<Integer>();
+        // Add three elements.
+        elements.add(5658845);    // Position number 0
+        elements.add(4520125);
+        elements.add(7895122);
+        elements.add(8777541);
+        elements.add(8451277);   // Position number 4
+        elements.add(1302850);
+        elements.add(8080152);
+        elements.add(4562555);
+        elements.add(5552012);
+        elements.add(5050552);
+        elements.add(7825877);
+        elements.add(1250255);
+        elements.add(1005231);
+        elements.add(6545231);
+        elements.add(3852085);
+        elements.add(7576651);
+        elements.add(7881200);
+        elements.add(4581002);
+
+        int userInput;
+        int results1 = 0;
+        boolean results = false;
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter your account number ");
+        userInput = keyboard.nextInt();
+        if (elements.contains(userInput)) {
+            System.out.println("Account number entered is valid.");
+        } else {
+            System.out.println("Account number entered is invalid.");
+        }
+
+    }
+}
